@@ -4,6 +4,8 @@
     // WHEN GitHub username entered, link to profile added to Questions
     // WHEN email address entered, email address added to Questions with contact instructions for more questions
 
+    // For Y/N questions, N needs to omit the next question and omit that section from the README
+
 // Requirements
 const inquirer = require('inquirer');
 const fs = require('fs');
