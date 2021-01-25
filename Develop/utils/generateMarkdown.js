@@ -2187,12 +2187,12 @@ function generateMarkdown(data) {
   ## Desctiption
     ${data.description}
   ## Table of Contents
-  - [Installation] (#Installation)
-  - [Usage] (#Usage)
-  - [License] (#License)
-  - [Contributing] (#Contributing)
-  - [Tests] (#Tests)
-  - [Questions] (#Questions)
+  - Installation
+  - Usage
+  - License
+  - Contributing
+  - Tests
+  - Questions
   ## Installation
   ${data.installation}
   ## Usage
@@ -2204,7 +2204,7 @@ function generateMarkdown(data) {
   ## Tests
   ${data.tests}
   ## Questions
-  GitHub: https://www.github.com/${data.github}<br>
+  GitHub: https://www.github.com/${data.github}
   Email: ${data.email}
   `;
 }
