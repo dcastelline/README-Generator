@@ -2196,7 +2196,7 @@ function generateMarkdown(data) {
   return `# ${data.title}
   ${badge}
   ## Description
-    ${data.description}
+  ${data.description}
 
   ## Table of Contents
   - [Installation](#installation)
@@ -2222,7 +2222,7 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  ${data.questions}
+  ${data.questions}<br>
   GitHub: https://www.github.com/${data.github}<br>
   Email: ${data.email}
   `;

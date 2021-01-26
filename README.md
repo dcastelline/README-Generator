@@ -1,7 +1,8 @@
 # README Generator
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Description
-    This project was completed using Node.js and inquirer npm to automatically generate a README in markdown from answers to prompts.
+  This project was completed using Node.js and inquirer npm to automatically generate a README in markdown from answers to prompts.
+  Video Walkthrough: https://github.com/dcastelline/README-Generator
 
   ## Table of Contents
   - [Installation](#installation)
@@ -12,10 +13,10 @@
   - [Questions](#questions)
 
   ## Installation
-  Install Node.js
+  To install, first clone the repository.  Open the README Generator.  Using Visual Studio Code, open the Integrated Terminal and ensure that you are in the Develop folder.  Then, use the command "npm install" to install the required dependencies.
 
   ## Usage
-  In Visual Studio Code, in the Integrated Terminal, type the command 'node index.js' to begin the program.  Then answer the questions you are prompted with.  After answering questions, a README.md file will be created and you can make more adjustments to it.
+  In Visual Studio Code, after installing the required dependencies, the user can run the program.  In the Integrated Terminal, type the command "node index.js" to begin the program.  The user will then answer questions they are prompted with.  After answering questions, a README.md file will be created.
 
   ## License
   MIT License
@@ -40,14 +41,8 @@
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
 
-  ## Contributing
-  N/A
-
-  ## Tests
-  N/A
-
   ## Questions
-  You can contact me via GitHub or email with questions.
-  GitHub: https://www.github.com/dcastelline<br>
+  I can be contacted via GitHub or email with questions.
+  GitHub: https://www.github.com/dcastelline
   Email: daniel.castelline@gmail.com
   
