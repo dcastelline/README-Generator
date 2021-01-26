@@ -1,6 +1,6 @@
 # README Generator
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  ## Desctiption
+  ## Description
     This project was completed using Node.js and inquirer npm to automatically generate a README in markdown from answers to prompts.
 
   ## Table of Contents
