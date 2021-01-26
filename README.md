@@ -1,7 +1,7 @@
 # README Generator
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Description
-  This project was completed using Node.js and inquirer npm to automatically generate a README in markdown from answers to prompts.
+  This project was completed using Node.js and inquirer npm to automatically generate a README in markdown from answers to prompts.  
   Video Walkthrough: https://github.com/dcastelline/README-Generator
 
   ## Table of Contents
@@ -42,7 +42,7 @@
     SOFTWARE.
 
   ## Questions
-  I can be contacted via GitHub or email with questions.
-  GitHub: https://www.github.com/dcastelline
+  I can be contacted via GitHub or email with questions.  
+  GitHub: https://www.github.com/dcastelline  
   Email: daniel.castelline@gmail.com
   
