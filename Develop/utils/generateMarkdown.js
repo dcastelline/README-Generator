@@ -1,8 +1,7 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   let userLicense = '';
-  const gnuAgplv3 =
-    `GNU AFFERO GENERAL PUBLIC LICENSE
+  const gnuAgplv3 = `GNU AFFERO GENERAL PUBLIC LICENSE
     Version 3, 19 November 2007
 
     Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
@@ -633,7 +632,6 @@ function generateMarkdown(data) {
     state the exclusion of warranty; and each file should have at least
     the "copyright" line and a pointer to where the full notice is found.
 
-    <one line to give the program's name and a brief idea of what it does.>
     Copyright (C) ${data.year} ${data.firstLast}
 
     This program is free software: you can redistribute it and/or modify
@@ -664,8 +662,7 @@ function generateMarkdown(data) {
     For more information on this, and how to apply and follow the GNU AGPL, see
     <https://www.gnu.org/licenses/>.`;
 
-  const gnuGplv3 =
-    `GNU GENERAL PUBLIC LICENSE
+  const gnuGplv3 = `GNU GENERAL PUBLIC LICENSE
     Version 3, 29 June 2007
 
     Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
@@ -1340,8 +1337,7 @@ function generateMarkdown(data) {
     Public License instead of this License.  But first, please read
     <https://www.gnu.org/licenses/why-not-lgpl.html>.`;
     
-  const gnuLgplv3 =
-    `GNU LESSER GENERAL PUBLIC LICENSE
+  const gnuLgplv3 = `GNU LESSER GENERAL PUBLIC LICENSE
     Version 3, 29 June 2007
 
     Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
@@ -1507,8 +1503,7 @@ function generateMarkdown(data) {
     permanent authorization for you to choose that version for the
     Library.`;
 
-  const mozPubLic2 =
-    `Mozilla Public License Version 2.0
+  const mozPubLic2 = `Mozilla Public License Version 2.0
     ==================================
     
     1. Definitions
@@ -1882,8 +1877,7 @@ function generateMarkdown(data) {
       This Source Code Form is "Incompatible With Secondary Licenses", as
       defined by the Mozilla Public License, v. 2.0.`;
 
-  const apacheLic2 =
-    `Apache License
+  const apacheLic2 = `Apache License
     Version 2.0, January 2004
     http://www.apache.org/licenses/
 
@@ -2085,8 +2079,7 @@ function generateMarkdown(data) {
     See the License for the specific language governing permissions and
     limitations under the License.`;
 
-  const mit =
-    `MIT License
+  const mit = `MIT License
 
     Copyright (c) ${data.year} ${data.firstLast}
     
@@ -2108,8 +2101,7 @@ function generateMarkdown(data) {
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.`;
 
-  const boostSoftLic1 =
-    `Boost Software License - Version 1.0 - August 17th, 2003
+  const boostSoftLic1 = `Boost Software License - Version 1.0 - August 17th, 2003
 
     Permission is hereby granted, free of charge, to any person or organization
     obtaining a copy of the software and accompanying documentation covered by
@@ -2133,8 +2125,7 @@ function generateMarkdown(data) {
     ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
     DEALINGS IN THE SOFTWARE.`;
 
-  const theUnlicense =
-    `This is free and unencumbered software released into the public domain.
+  const theUnlicense = `This is free and unencumbered software released into the public domain.
 
     Anyone is free to copy, modify, publish, use, compile, sell, or
     distribute this software, either in source code form or as a compiled
@@ -2158,6 +2149,7 @@ function generateMarkdown(data) {
     OTHER DEALINGS IN THE SOFTWARE.
     
     For more information, please refer to <https://unlicense.org>`;
+
   if (data.license === 'GNU AGPLv3') {
     userLicense = gnuAgplv3;
   }
@@ -2184,26 +2176,35 @@ function generateMarkdown(data) {
   }
 
   return `# ${data.title}
+
   ## Desctiption
     ${data.description}
+
   ## Table of Contents
-  - Installation
-  - Usage
-  - License
-  - Contributing
-  - Tests
-  - Questions
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
+
   ## Installation
   ${data.installation}
+
   ## Usage
   ${data.usage}
+
   ## License
-  ${data.license}
+  ${userLicense}
+
   ## Contributing
   ${data.contributing}
+
   ## Tests
   ${data.tests}
+
   ## Questions
+  ${data.questions}
   GitHub: https://www.github.com/${data.github}
   Email: ${data.email}
   `;

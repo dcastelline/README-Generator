@@ -1,10 +1,5 @@
 // Acceptance criteria
-    // Links in Table of Contents link to corresponding sections
     // WHEN a license is chosen, that badge added to top of README, license description added to License section
-    // WHEN GitHub username entered, link to profile added to Questions
-    // WHEN email address entered, email address added to Questions with contact instructions for more questions
-
-    // For Y/N questions, N needs to omit the next question and omit that section from the README
 
 // Requirements
 const inquirer = require('inquirer');
@@ -25,25 +20,10 @@ const questions = [
         message: 'Enter a description of your project.',
      },
      {
-        name: 'tableOfContents',
-        type: 'input',
-        message: 'Enter your table of contents information.',
-     },
-     {
-         name: 'installConfirm',
-         type: 'confirm',
-         message: 'Would you like to add installation instructions?',
-     },
-     {
         name: 'installation',
         type: 'input',
         message: 'Enter your installation instructions.',
      },
-     {
-        name: 'usageConfirm',
-        type: 'confirm',
-        message: 'Would you like to add usage instructions?',
-    },
      {
         name: 'usage',
         type: 'input',
@@ -56,24 +36,19 @@ const questions = [
         choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'], 
     },
      {
-        name: 'contributorConfirm',
-        type: 'confirm',
-        message: 'Would you like to add contributors?',
-    },
-     {
          name: 'contributing',
          type: 'input',
          message: 'Enter the names of your contributors.',
      },
      {
-        name: 'testConfirm',
-        type: 'confirm',
-        message: 'Would you like to add test instructions?',
-    },
-     {
          name: 'tests',
          type: 'input',
          message: 'Enter test instructions.',
+     },
+     {
+         name: 'questions',
+         type: 'input',
+         message: 'Enter instructions for how to contact you with questions.  You will be prompted for your GitHub username and email address after this.',
      },
      {
          name: 'github',
